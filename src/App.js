@@ -105,7 +105,6 @@ const App = () => {
       <main className={"main " + (isResult ? "main-result" : "main-search")}>
         <div class={"logo " + (isResult ? "logo-result" : "logo-search")}>
           <h1>Czupakabra RealFaktVerify</h1>
-          <img src="/capybara.svg" alt="Capybara SVG" />
         </div>
         <div className="section search">
           <div className="input-section">
