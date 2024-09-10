@@ -10,8 +10,8 @@ const App = () => {
   useEffect(() => {
     if (isLoading) {
       setTimeout(() => {
-        setResult(true)
-        setLoading(false)
+        setResult(true);
+        setLoading(false);
       }, 5000);
     }
   }, [isLoading]);
@@ -88,7 +88,11 @@ const App = () => {
 
   const loading = (
     <>
-      <div className={"loading " + (isLoading ? "loading-visible" : "loading-hidden")}>
+      <div
+        className={
+          "loading " + (isLoading ? "loading-visible" : "loading-hidden")
+        }
+      >
         <div className="loading-wrapper">
           <DotLottieReact
             src="https://lottie.host/cb31e369-a159-411d-9ab7-391041c3bb8a/RSOgpOBx2E.json"
@@ -105,6 +109,10 @@ const App = () => {
       <main className={"main " + (isResult ? "main-result" : "main-search")}>
         <div class={"logo " + (isResult ? "logo-result" : "logo-search")}>
           <h1>Czupakabra RealFaktVerify</h1>
+          <img
+            src={`${process.env.PUBLIC_URL}/capybara.svg`}
+            alt="Capybara SVG"
+          />
         </div>
         <div className="section search">
           <div className="input-section">
